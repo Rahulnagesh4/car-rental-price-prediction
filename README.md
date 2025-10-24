@@ -1,47 +1,72 @@
-# car-rental-price-prediction
-This project focuses on predicting car rental prices using advanced machine learning techniques. It leverages vehicle features, customer reviews, and location data to build accurate models that support pricing strategy optimization in the car rental industry.
+🚗 Car Rental Price Prediction
+📘 Overview
 
-Objectives
-Predict car rental prices based on vehicle and location data.
+This project predicts car rental prices based on multiple vehicle and rental features using machine learning. It leverages data preprocessing, feature engineering, and regression modeling to estimate the cost of renting a car accurately.
 
-Compare the performance of Multiple Regression, Random Forest, and XGBoost models.
+The project can help rental companies optimize pricing strategies and assist customers in understanding what factors influence rental costs.
 
-Identify key features that impact rental prices.
+🧠 Key Features
 
-Enable data-driven decision-making for dynamic pricing strategies.
+Data cleaning and preprocessing of real-world car rental data
 
+Exploratory Data Analysis (EDA) and visualization
 
-Files
-car_rental_price_prediction.py – Main Python script for data preprocessing, model training, and evaluation.
+Feature selection and engineering
 
-CarRentalDataV1.csv – Dataset containing vehicle and rental information.
+Machine learning model training (e.g., Linear Regression, Random Forest, etc.)
 
+Model evaluation using performance metrics (R², RMSE, MAE)
 
-The dataset includes:
+Predictive function for new rental data inputs
 
-Vehicle Details: make, model, year, type, fuel type.
-
-Customer Info: rating, number of trips, review count.
-
-Location: city, state, latitude, longitude.
-
-Target: daily rental price.
+📂 Project Structure
+├── car_rental_price_prediction.py   # Main script for training and prediction
+├── CarRentalDataV1.csv              # Dataset file
+├── README.md                        # Project documentation
 
 
+🧰 Requirements
 
- Techniques Used
-Data Preprocessing: Handling missing values, one-hot encoding, scaling.
+To run this project, install the required dependencies:
 
-Feature Engineering: Geographic encoding, transformation of categorical variables.
-
-Model Tuning: RandomizedSearchCV for hyperparameter optimization.
-
-Evaluation Metrics: R² score and RMSE.
+pip install -r requirements.txt
 
 
-Future Enhancements
-Integrate real-time pricing data from APIs.
+If you don’t have a requirements.txt, you can install the main libraries manually:
 
-Deploy model using a web interface or REST API.
+pip install pandas numpy matplotlib seaborn scikit-learn
 
-Incorporate external factors (e.g., weather, local events) for more accurate pricing.
+
+
+
+Run the script:
+
+python car_rental_price_prediction.py
+
+
+Output:
+
+Trained machine learning model results
+
+Evaluation metrics (R², RMSE, etc.)
+
+Price prediction outputs
+
+📊 Example Results
+Model	R² Score	RMSE	MAE
+Linear Regression	0.82	3.45	2.10
+Random Forest	0.89	2.80	1.95
+
+(These are example results; your actual metrics may vary.)
+
+📈 Future Improvements
+
+Deploy model using Streamlit or Flask for interactive predictions
+
+Hyperparameter tuning for better accuracy
+
+Integration with live rental data APIs
+
+Support for more geographic regions
+
+
